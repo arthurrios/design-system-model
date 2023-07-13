@@ -9,6 +9,9 @@ export const parameters = {
     },
   },
   docs: {
-    theme: themes.dark,
-  }
+    theme: {
+      ...themes.dark,
+      fontBase: '"Roboto", sans-serif',
+  },
+}
 }
