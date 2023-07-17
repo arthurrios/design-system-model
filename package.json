@@ -5,10 +5,11 @@
   ],
   "scripts": {
     "dev": "turbo run dev --parallel",
+    "lint": "eslint src --ext .ts,.tsx",
     "build": "turbo run build",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "turbo run build --filter=@ignite-ui/docs && changeset publish"
+    "release": "turbo run build --filter=@arthurrios-ignite-ui/docs && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
