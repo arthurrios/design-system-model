@@ -30,10 +30,10 @@
     "vite": "^3.2.7"
   },
   "dependencies": {
-    "@ignite-ui/eslint-config": "*",
-    "@ignite-ui/react": "*",
-    "@ignite-ui/tokens": "*",
-    "@ignite-ui/ts-config": "*",
+    "@arthurrios-ignite-ui/eslint-config": "*",
+    "@arthurrios-ignite-ui/react": "*",
+    "@arthurrios-ignite-ui/tokens": "*",
+    "@arthurrios-ignite-ui/ts-config": "*",
     "@storybook/addon-a11y": "^7.0.27",
     "phosphor-react": "^1.4.1",
     "polished": "^4.2.2",
