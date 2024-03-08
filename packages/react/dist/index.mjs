@@ -1,8 +1,8 @@
-// src/index.tsx
+// src/components/Button/index.tsx
 import { jsx } from "react/jsx-runtime";
-function App() {
-  return /* @__PURE__ */ jsx("h1", { className: "", children: "Hello world!" });
+function Button() {
+  return /* @__PURE__ */ jsx("button", { className: "bg-ignite-500 h-8", children: "Test" });
 }
 export {
-  App
+  Button
 };
