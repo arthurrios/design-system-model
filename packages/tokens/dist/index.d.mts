@@ -42,12 +42,12 @@ declare const radii: {
     full: string;
 };
 
-declare const fonts: {
+declare const fontFamily: {
     default: string;
     code: string;
 };
 
-declare const fontSizes: {
+declare const fontSize: {
     xxs: string;
     xs: string;
     sm: string;
@@ -63,17 +63,17 @@ declare const fontSizes: {
     '9xl': string;
 };
 
-declare const fontWeights: {
-    'font-regular': string;
+declare const fontWeight: {
+    'font-normal': string;
     'font-medium': string;
     'font-bold': string;
 };
 
-declare const lineHeights: {
+declare const lineHeight: {
     shorter: string;
     short: string;
     base: string;
     tall: string;
 };
 
-export { colors, fontSizes, fontWeights, fonts, lineHeights, radii, space };
+export { colors, fontFamily, fontSize, fontWeight, lineHeight, radii, space };
