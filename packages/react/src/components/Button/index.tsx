@@ -1,3 +1,8 @@
-export function Button() {
-  return <button className="bg-ignite-500 h-8">Test</button>
-}
+import { styled } from '../../styles'
+
+export const Button = styled('button', {
+  fontFamily: '$default',
+  backgroundColor: '$ignite-500',
+  borderRadius: '$md',
+  padding: '$4',
+})

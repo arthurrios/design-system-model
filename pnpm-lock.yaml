@@ -112,6 +112,10 @@ importers:
         version: 8.57.0
 
   packages/react:
+    dependencies:
+      '@stitches/react':
+        specifier: ^1.2.8
+        version: 1.2.8(react@18.2.0)
     devDependencies:
       '@arthurrios-ignite-ui/eslint-config':
         specifier: '*'
@@ -128,21 +132,12 @@ importers:
       '@types/react-dom':
         specifier: ^18.2.21
         version: 18.2.21
-      autoprefixer:
-        specifier: ^10.4.18
-        version: 10.4.18(postcss@8.4.35)
-      postcss:
-        specifier: ^8.4.35
-        version: 8.4.35
       react:
         specifier: ^18.2.0
         version: 18.2.0
-      tailwindcss:
-        specifier: ^3.4.1
-        version: 3.4.1
       tsup:
         specifier: ^8.0.2
-        version: 8.0.2(postcss@8.4.35)(typescript@5.4.2)
+        version: 8.0.2(typescript@5.4.2)
       typescript:
         specifier: ^5.4.2
         version: 5.4.2
@@ -157,7 +152,7 @@ importers:
         version: link:../ts-config
       tsup:
         specifier: ^8.0.2
-        version: 8.0.2(postcss@8.4.35)(typescript@5.4.2)
+        version: 8.0.2(typescript@5.4.2)
       typescript:
         specifier: ^5.4.2
         version: 5.4.2
@@ -2908,6 +2903,14 @@ packages:
   /@sinclair/typebox@0.27.8:
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
     dev: true
+
+  /@stitches/react@1.2.8(react@18.2.0):
+    resolution: {integrity: sha512-9g9dWI4gsSVe8bNLlb+lMkBYsnIKCZTmvqvDG+Avnn69XfmHZKiaMrx7cgTaddq7aTPPmXiTsbFcUy0xgI4+wA==}
+    peerDependencies:
+      react: '>= 16.3.0'
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /@storybook/addon-actions@7.6.17:
     resolution: {integrity: sha512-TBphs4v6LRfyTpFo/WINF0TkMaE3rrNog7wW5mbz6n0j8o53kDN4o9ZEcygSL5zQX43CAaghQTeDCss7ueG7ZQ==}
@@ -9917,7 +9920,7 @@ packages:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
     dev: true
 
-  /tsup@8.0.2(postcss@8.4.35)(typescript@5.4.2):
+  /tsup@8.0.2(typescript@5.4.2):
     resolution: {integrity: sha512-NY8xtQXdH7hDUAZwcQdY/Vzlw9johQsaqf7iwZ6g1DOUlFYQ5/AtVAjTvihhEyeRlGo4dLRVHtrRaL35M1daqQ==}
     engines: {node: '>=18'}
     hasBin: true
@@ -9944,7 +9947,6 @@ packages:
       execa: 5.1.1
       globby: 11.1.0
       joycon: 3.1.1
-      postcss: 8.4.35
       postcss-load-config: 4.0.2(postcss@8.4.35)
       resolve-from: 5.0.0
       rollup: 4.12.1

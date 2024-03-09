@@ -1,10 +1,7 @@
-// import type { Preview } from "@storybook/react";
+import type { Preview } from "@storybook/react";
 import { themes } from '@storybook/theming';
 
-// import '../../react/src/main.css'
-import './global.css'
-
-const preview = {
+const preview: Preview = {
   parameters: {
     backgrounds: { default: "dark" },
     docs: {
