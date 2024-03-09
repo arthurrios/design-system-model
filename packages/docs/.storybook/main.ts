@@ -1,24 +1,28 @@
 import type { StorybookConfig } from "@storybook/react-vite";
 
-import { join, dirname } from "path";
-
-function getAbsolutePath(value: string): any {
-  return dirname(require.resolve(join(value, "package.json")));
-}
-const config: StorybookConfig = {
+const Config: StorybookConfig = {
   stories: ["../src/stories/**/*.mdx", "../src/stories/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
   addons: [
-    getAbsolutePath("@storybook/addon-links"),
-    getAbsolutePath("@storybook/addon-essentials"),
-    getAbsolutePath("@storybook/addon-onboarding"),
-    getAbsolutePath("@storybook/addon-interactions"),
+    "@storybook/addon-links",
+    "@storybook/addon-essentials",
+    "@storybook/addon-onboarding",
+    "@storybook/addon-interactions",
+    {
+      name: '@storybook/addon-postcss',
+      options: {
+        postcssLoaderOptions: {
+          implementation: require('postcss'),
+        },
+      },
+    },
   ],
   framework: {
-    name: getAbsolutePath("@storybook/react-vite"),
+    name: "@storybook/react-vite",
     options: {},
   },
   docs: {
     autodocs: true,
   },
 };
-export default config;
+
+export default Config;

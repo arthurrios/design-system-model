@@ -21,10 +21,10 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 var src_exports = {};
 __export(src_exports, {
   colors: () => colors,
-  fontFamily: () => fontFamily,
-  fontSize: () => fontSize,
-  fontWeight: () => fontWeight,
-  lineHeight: () => lineHeight,
+  fontSizes: () => fontSizes,
+  fontWeights: () => fontWeights,
+  fonts: () => fonts,
+  lineHeights: () => lineHeights,
   radii: () => radii,
   space: () => space
 });
@@ -78,13 +78,13 @@ var radii = {
 };
 
 // src/fonts.ts
-var fontFamily = {
+var fonts = {
   default: "Roboto, sans-serif",
   code: "monospace"
 };
 
-// src/font-size.ts
-var fontSize = {
+// src/font-sizes.ts
+var fontSizes = {
   xxs: "0.625rem",
   xs: "0.75rem",
   sm: "0.875rem",
@@ -100,15 +100,15 @@ var fontSize = {
   "9xl": "6rem"
 };
 
-// src/font-weight.ts
-var fontWeight = {
+// src/font-weights.ts
+var fontWeights = {
   "font-normal": "400",
   "font-medium": "500",
   "font-bold": "700"
 };
 
-// src/line-height.ts
-var lineHeight = {
+// src/line-heights.ts
+var lineHeights = {
   shorter: "125%",
   short: "140%",
   base: "160%",
@@ -117,10 +117,10 @@ var lineHeight = {
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   colors,
-  fontFamily,
-  fontSize,
-  fontWeight,
-  lineHeight,
+  fontSizes,
+  fontWeights,
+  fonts,
+  lineHeights,
   radii,
   space
 });
