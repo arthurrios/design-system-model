@@ -70,9 +70,9 @@ var fontSizes = {
 
 // src/font-weights.ts
 var fontWeights = {
-  "font-normal": "400",
-  "font-medium": "500",
-  "font-bold": "700"
+  regular: "400",
+  medium: "500",
+  bold: "700"
 };
 
 // src/line-heights.ts

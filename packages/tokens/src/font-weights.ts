@@ -1,5 +1,5 @@
 export const fontWeights = {
-  'font-normal': '400',
-  'font-medium': '500',
-  'font-bold': '700',
+  regular: '400',
+  medium: '500',
+  bold: '700',
 }

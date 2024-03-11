@@ -64,9 +64,9 @@ declare const fontSizes: {
 };
 
 declare const fontWeights: {
-    'font-normal': string;
-    'font-medium': string;
-    'font-bold': string;
+    regular: string;
+    medium: string;
+    bold: string;
 };
 
 declare const lineHeights: {

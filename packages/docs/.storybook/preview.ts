@@ -5,7 +5,10 @@ const preview: Preview = {
   parameters: {
     backgrounds: { default: "dark" },
     docs: {
-        theme: themes.dark,
+        theme: {
+          ...themes.dark,
+          // FontFace: { default: "Roboto, sans-serif"},
+        }
     },
     actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
