@@ -9,6 +9,13 @@ export default {
   args: {
     src: 'https://github.com/arthurrios.png',
   },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
+  },
 } as Meta<AvatarProps>
 
 export const Primary: StoryObj<AvatarProps> = {}
