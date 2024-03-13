@@ -30,6 +30,9 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - run: pnpm run build
+        env:
+          TURBO_TOKEN: Ezf9FBH84sb7fLGfkH2RiMlp
+          TURBO_TEAM: arthurrios
 
       - name: Deploy storybook
         working-directory: ./packages/docs
