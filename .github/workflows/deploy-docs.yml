@@ -31,7 +31,7 @@ jobs:
 
       - run: pnpm run build
         env:
-          TURBO_TOKEN: Ezf9FBH84sb7fLGfkH2RiMlp
+          TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN}}
           TURBO_TEAM: arthurrios
 
       - name: Deploy storybook

@@ -41,5 +41,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          TURBO_TOKEN: Ezf9FBH84sb7fLGfkH2RiMlp
+          TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN}}
           TURBO_TEAM: arthurrios
