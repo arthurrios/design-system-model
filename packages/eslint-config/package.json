@@ -1,6 +1,7 @@
 {
   "name": "@arthurrios-ignite-ui/eslint-config",
   "main": "index.js",
+  "version": "1.0.0",
   "private": true,
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.2.2",
