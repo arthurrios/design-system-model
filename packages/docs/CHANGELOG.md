@@ -1,5 +1,16 @@
 # @arthurrios-ignite-ui/docs
 
+## 1.1.0
+
+### Minor Changes
+
+- Add Tooltip and Toast components
+
+### Patch Changes
+
+- Updated dependencies
+  - @arthurrios-ignite-ui/react@1.1.0
+
 ## 1.0.1
 
 ### Patch Changes
