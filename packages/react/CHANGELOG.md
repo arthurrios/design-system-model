@@ -1,5 +1,11 @@
 # @arthurrios-ignite-ui/react
 
+## 1.1.1
+
+### Patch Changes
+
+- Add the possibility to forward ref to text input
+
 ## 1.1.0
 
 ### Minor Changes
