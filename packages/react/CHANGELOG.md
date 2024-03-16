@@ -1,5 +1,11 @@
 # @arthurrios-ignite-ui/react
 
+## 1.1.2
+
+### Patch Changes
+
+- Fix TextInput placeholder styles
+
 ## 1.1.1
 
 ### Patch Changes
